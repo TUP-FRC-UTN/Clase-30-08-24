@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="text-center">Calculadora</h1>
+      
+      <app-input 
+        [value]="valor1" 
+        (valueChange)="updateValue1($event)" 
+        placeholder="Ingrese el primer valor">
+      </app-input>
+      
+      <app-input 
+        [value]="valor2" 
+        (valueChange)="updateValue2($event)" 
+        placeholder="Ingrese el segundo valor">
+      </app-input>
+
+      <div class="mt-3">
+        <h4>Resultado</h4>
+        <input type="text" class="form-control" [value]="resultado" readonly />
+      </div>
+
+      <app-operation 
+        [value1]="valor1" 
+        [value2]="valor2" 
+        (operationResult)="setResult($event)"
+        (clearValues)="clearValues()">
+      </app-operation>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="text-center">
+
+    <div class="container mt-5" style="border: 5px solid green;">
+        <h1>Directivas en angular</h1>
+        <app-app-directivas></app-app-directivas>
+    </div>
+    @defer(on viewport) {
+    <div class="container mt-5" style="border: 5px solid burlywood;">
+        <h1>Directivas nuevas en angular</h1>
+        <app-app-directivas-nuevas></app-app-directivas-nuevas>
+    </div>
+    <div class="container mt-5" style="border: 5px solid red;">
+        <app-pipes></app-pipes>
+    </div>
+    <div class="container mt-5" style="border: 5px solid yellow;">
+        <app-binding></app-binding>
+    </div>
+    }
+    @placeholder () {
+    <p>Contenido de relleno</p>
+    }
+    @loading (minimum 4s) {
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div> }
+</div>

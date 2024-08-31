@@ -1,0 +1,10 @@
+.clase-activa {
+  color: aqua;
+  font-weight: bold;
+  font-size: 22px;
+}
+.clase-inactiva {
+  color: red;
+  font-weight: normal;
+  font-size: 32px;
+}
